@@ -1,0 +1,110 @@
+header > div {
+  background-color: $color-header;
+}
+.header-user ul {
+  display: flex;
+  font-size: 1.5rem;
+  list-style: none;
+  color: white;
+  justify-content: flex-end;
+}
+.header-user li {
+  padding: 5px;
+}
+
+.header-content {
+  display: grid;
+  width: 100%;
+  padding: 2%;
+  grid-gap: 10px;
+  grid-template-columns: repeat(4, [col] auto);
+  grid-template-rows: repeat(1, [row] auto);
+}
+.header-logo {
+  grid-column: col / span 1;
+  grid-row: row;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.header-buy {
+  grid-column: col 4 / span 1;
+  grid-row: row;
+  display: flex;
+  width: auto;
+  margin: 0 auto;
+}
+.header-search {
+  grid-column: col 2 / span 2;
+  grid-row: row;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 1%;
+  justify-content: space-evenly;
+}
+.header-content img {
+  width: auto;
+  min-width: 100px;
+  max-width: 280px;
+}
+.content-div-input {
+  border-radius: 12px;
+  width: 60%;
+  padding: 0 3%;
+  background-color: rgb(255, 255, 255);
+}
+.header-content input {
+  border: none;
+  width: 100%;
+  height: 30px;
+  outline: none;
+}
+.icon-search {
+  width: 30px;
+  height: 28px;
+  margin: auto 0;
+  background-image: url("/Resource/Icons/searchGold.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.icon-car {
+  width: 40px;
+  height: 40px;
+  margin: auto;
+  background-image: url("/Resource/Icons/buy_100px.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.header-content p {
+  margin: auto;
+  font-size: 1.7rem;
+  color: white;
+}
+.header-menu {
+  width: 100%;
+}
+.header-menu ul {
+  display: flex;
+  list-style: none;
+  font-size: 1.4rem;
+  justify-content: center;
+}
+.header-menu li {
+  padding: 0 3%;
+}
+.header-menu a {
+  color: white;
+  text-decoration: none;
+}
+.header-menu a:hover {
+  color: $color-gold;
+}
+
+.products:hover {
+  color: #000;
+  display: flex;
+}

@@ -1,0 +1,400 @@
+/*
+1. Posicionanmiento
+2. Modelo de caja (box model)
+3. Tipografia
+4. Visuales
+5. Otros
+*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "DM sans", sans-serif;
+}
+
+/* Estilos para motores Webkit y blink (Chrome, Safari, Opera... )*/
+body::-webkit-scrollbar {
+  width: 12px;
+  /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #292929;
+  /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #207A78;
+  /* color of the scroll thumb */
+  border-radius: 20px;
+  /* roundness of the scroll thumb */
+  border: 3px solid #292929;
+  /* creates padding around scroll thumb */
+}
+
+body::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+header > div {
+  background-color: #22252D;
+}
+
+.header-user ul {
+  display: flex;
+  font-size: 1.5rem;
+  list-style: none;
+  color: white;
+  justify-content: flex-end;
+}
+
+.header-user li {
+  padding: 5px;
+}
+
+.header-content {
+  display: grid;
+  width: 100%;
+  padding: 2%;
+  grid-gap: 10px;
+  grid-template-columns: repeat(4, [col] auto);
+  grid-template-rows: repeat(1, [row] auto);
+}
+
+.header-logo {
+  grid-column: col/span 1;
+  grid-row: row;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-buy {
+  grid-column: col 4/span 1;
+  grid-row: row;
+  display: flex;
+  width: auto;
+  margin: 0 auto;
+}
+
+.header-search {
+  grid-column: col 2/span 2;
+  grid-row: row;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 1%;
+  justify-content: space-evenly;
+}
+
+.header-content img {
+  width: auto;
+  min-width: 100px;
+  max-width: 280px;
+}
+
+.content-div-input {
+  border-radius: 12px;
+  width: 60%;
+  padding: 0 3%;
+  background-color: white;
+}
+
+.header-content input {
+  border: none;
+  width: 100%;
+  height: 30px;
+  outline: none;
+}
+
+.icon-search {
+  width: 30px;
+  height: 28px;
+  margin: auto 0;
+  background-image: url("/Resource/Icons/searchGold.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.icon-car {
+  width: 40px;
+  height: 40px;
+  margin: auto;
+  background-image: url("/Resource/Icons/buy_100px.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.header-content p {
+  margin: auto;
+  font-size: 1.7rem;
+  color: white;
+}
+
+.header-menu {
+  width: 100%;
+}
+
+.header-menu ul {
+  display: flex;
+  list-style: none;
+  font-size: 1.4rem;
+  justify-content: center;
+}
+
+.header-menu li {
+  padding: 0 3%;
+}
+
+.header-menu a {
+  color: white;
+  text-decoration: none;
+}
+
+.header-menu a:hover {
+  color: #FFE55A;
+}
+
+.products:hover {
+  color: #000;
+  display: flex;
+}
+
+.main-card--product {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(5, [col] auto);
+  grid-template-rows: repeat(1, [row] auto);
+  padding: 5%;
+  height: auto;
+  width: 100%;
+}
+
+.card-product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 12px;
+  border: 1px solid #cecece;
+  width: 270px;
+  height: 270px;
+}
+
+.card-product img {
+  margin: 25px auto;
+  width: 50%;
+  height: 60%;
+}
+
+.card-product span {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  margin-left: 10px;
+  margin: 0 20px;
+  background-image: url("/Resource/Icons/add_basket_64.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card-product div {
+  display: flex;
+  width: 100%;
+  height: inherit;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-product h3 {
+  font-size: 1.6rem;
+  color: #b89c00;
+}
+
+.footer-container {
+  width: 100%;
+}
+
+.footer--svg-fondo {
+  width: 100%;
+  height: 0;
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: space-around;
+  width: 100%;
+  height: auto;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  left: 0px;
+  margin-top: 10%;
+  padding: 0;
+}
+
+.footer-logo img {
+  width: 80px;
+}
+
+.footer-logo p {
+  font-size: 1.9rem;
+  color: white;
+  padding-left: 1%;
+}
+
+.menu {
+  width: 100%;
+  font-size: 150%;
+  color: white;
+  padding: 0% 18%;
+}
+
+.menu-title {
+  width: auto;
+  display: grid;
+  grid-template-columns: repeat(7, [col] auto);
+  grid-template-rows: repeat(2, [row] auto);
+  margin: 0 auto;
+}
+
+.menu-title > li:nth-child(1) {
+  grid-column: col 1/span 1;
+  grid-row: row 1;
+  border-radius: 20px 0px 0px 0px;
+}
+
+.menu-title > li:nth-child(2) {
+  grid-column: col 2/span 1;
+  grid-row: row;
+}
+
+.menu-title > li:nth-child(3) {
+  grid-column: col 3/span 1;
+  grid-row: row;
+}
+
+.menu-title > li:nth-child(4) {
+  grid-column: col 4/span 1;
+  grid-row: row;
+}
+
+.menu-title > li:nth-child(5) {
+  grid-column: col 5/span 1;
+  grid-row: row;
+}
+
+.menu-title li:nth-child(6) {
+  grid-column: col 6/span 1;
+  grid-row: row;
+}
+
+.menu-title li:nth-child(7) {
+  border-radius: 0px 20px 0px 0px;
+  grid-column: col 7/span 1;
+  grid-row: row;
+}
+
+.menu-title > li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #207A78;
+  list-style: none;
+  padding: 5% 7px;
+  margin: 1px 0px;
+}
+
+.item-menu li:nth-child(1) {
+  grid-column: col/span 1;
+  grid-row: row 2;
+}
+
+.item-menu:nth-child(1) {
+  grid-column: col/span 1;
+  grid-row: row 2;
+}
+
+.border {
+  border-radius: 0px 0px 20px 0px;
+}
+
+.border1 {
+  border-radius: 0px 0px 0px 20px;
+}
+
+.item-menu li {
+  list-style: none;
+  background: rgba(0, 0, 0, 0);
+  padding: 4% 4px;
+}
+
+.item-menu {
+  background: rgba(0, 0, 0, 0.377);
+  padding: 4% 4px;
+}
+
+.item-menu a {
+  text-decoration: none;
+  color: white;
+}
+
+.main-card--product {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(5, [col] auto);
+  grid-template-rows: repeat(1, [row] auto);
+  padding: 5%;
+  height: auto;
+  width: 100%;
+}
+
+.card-product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 12px;
+  border: 1px solid #cecece;
+  width: 270px;
+  height: 270px;
+}
+
+.card-product img {
+  margin: 25px auto;
+  width: 50%;
+  height: 60%;
+}
+
+.card-product span {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  margin-left: 10px;
+  margin: 0 20px;
+  background-image: url("/Resource/Icons/add_basket_64.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card-product div {
+  display: flex;
+  width: 100%;
+  height: inherit;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-product h3 {
+  font-size: 1.6rem;
+  color: #b89c00;
+}
+/*# sourceMappingURL=style.css.map *//*# sourceMappingURL=style.css.map */

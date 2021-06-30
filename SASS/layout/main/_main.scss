@@ -1,0 +1,45 @@
+.main-card--product {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(5, [col] auto);
+  grid-template-rows: repeat(1, [row] auto);
+  padding: 5%;
+  height: auto;
+  width: 100%;
+}
+.card-product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 12px;
+  border: 1px solid rgb(206, 206, 206);
+  width: 270px;
+  height: 270px;
+}
+.card-product img {
+  margin: 25px auto;
+  width: 50%;
+  height: 60%;
+}
+.card-product span {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  margin-left: 10px;
+  margin: 0 20px;
+  background-image: url("/Resource/Icons/add_basket_64.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.card-product div {
+  display: flex;
+  width: 100%;
+  height: inherit;
+  justify-content: center;
+  align-items: center;
+}
+.card-product h3 {
+  font-size: 1.6rem;
+  color: rgb(184, 156, 0);
+}
