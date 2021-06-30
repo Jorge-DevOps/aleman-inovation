@@ -1,5 +1,5 @@
 .menu {
-  // display: none;
+  display: none;
   width: 100%;
   font-size: 150%;
   color: white;
@@ -80,4 +80,7 @@
 .item-menu a{
   text-decoration: none;
   color: white;
+}
+.menuvisible{
+  display: flex;
 }
