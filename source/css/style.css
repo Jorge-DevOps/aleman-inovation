@@ -169,7 +169,7 @@ header > div {
 .main-card--product {
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: repeat(5, [col] auto);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-template-rows: repeat(1, [row] auto);
   padding: 5%;
   height: auto;
@@ -355,7 +355,7 @@ header > div {
 .main-card--product {
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: repeat(5, [col] auto);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-template-rows: repeat(1, [row] auto);
   padding: 5%;
   height: auto;
