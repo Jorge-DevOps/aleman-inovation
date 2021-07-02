@@ -290,6 +290,12 @@ main {
   width: 100%;
 }
 
+.div-container--form {
+  display: flex;
+  flex-direction: column;
+  padding: 0 5%;
+}
+
 .footer-container {
   width: 100%;
 }
@@ -547,5 +553,11 @@ main {
   padding: 5%;
   height: auto;
   width: 100%;
+}
+
+.div-container--form {
+  display: flex;
+  flex-direction: column;
+  padding: 0 5%;
 }
 /*# sourceMappingURL=style.css.map *//*# sourceMappingURL=style.css.map */
