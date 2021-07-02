@@ -217,6 +217,79 @@ header > div {
   color: #b89c00;
 }
 
+main {
+  width: auto;
+  height: auto;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.main-container-product {
+  display: flex;
+  width: 100%;
+  height: 70%;
+}
+
+.main-container--photo {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-container--photo p {
+  padding: 5%;
+  font-size: 1.8rem;
+  color: #22252D;
+}
+
+.main-container--photo img {
+  padding: 8%;
+  width: 50%;
+}
+
+.main-container--especification {
+  background-color: #226464;
+  width: 50%;
+}
+
+.main-container--description {
+  width: 100%;
+}
+
+.main-container--description p {
+  width: 100%;
+  padding: 5%;
+}
+
+.main-container--products {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.main-containers {
+  width: 100%;
+  height: 50%;
+}
+
+.main-container--form {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: repeat(1, [row] auto);
+  padding: 5%;
+  height: auto;
+  width: 100%;
+}
+
 .footer-container {
   width: 100%;
 }
@@ -401,5 +474,78 @@ header > div {
 .card-product h3 {
   font-size: 1.6rem;
   color: #b89c00;
+}
+
+main {
+  width: auto;
+  height: auto;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.main-container-product {
+  display: flex;
+  width: 100%;
+  height: 70%;
+}
+
+.main-container--photo {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-container--photo p {
+  padding: 5%;
+  font-size: 1.8rem;
+  color: #22252D;
+}
+
+.main-container--photo img {
+  padding: 8%;
+  width: 50%;
+}
+
+.main-container--especification {
+  background-color: #226464;
+  width: 50%;
+}
+
+.main-container--description {
+  width: 100%;
+}
+
+.main-container--description p {
+  width: 100%;
+  padding: 5%;
+}
+
+.main-container--products {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.main-containers {
+  width: 100%;
+  height: 50%;
+}
+
+.main-container--form {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: repeat(1, [row] auto);
+  padding: 5%;
+  height: auto;
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map *//*# sourceMappingURL=style.css.map */
