@@ -276,24 +276,43 @@ main {
 }
 
 .main-containers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  height: 50%;
+}
+
+.main-containers h2 {
+  padding: 2% 3% 0% 3%;
+  font-size: 1.9rem;
+  align-self: flex-start;
 }
 
 .main-container--form {
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-template-rows: repeat(1, [row] auto);
-  padding: 5%;
+  padding: 1% 3% 3% 3%;
   height: auto;
   width: 100%;
+  max-width: 1150px;
 }
 
 .div-container--form {
   display: flex;
   flex-direction: column;
   padding: 0 5%;
+}
+
+.div-container--form input {
+  width: 90%;
+  height: 25px;
+  border: 1px solid #dddd;
+  border-radius: 12px;
+  outline: none;
+  padding: 0% 4% 0% 4%;
 }
 
 .footer-container {
@@ -541,23 +560,42 @@ main {
 }
 
 .main-containers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  height: 50%;
+}
+
+.main-containers h2 {
+  padding: 2% 3% 0% 3%;
+  font-size: 1.9rem;
+  align-self: flex-start;
 }
 
 .main-container--form {
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-template-rows: repeat(1, [row] auto);
-  padding: 5%;
+  padding: 1% 3% 3% 3%;
   height: auto;
   width: 100%;
+  max-width: 1150px;
 }
 
 .div-container--form {
   display: flex;
   flex-direction: column;
   padding: 0 5%;
+}
+
+.div-container--form input {
+  width: 90%;
+  height: 25px;
+  border: 1px solid #dddd;
+  border-radius: 12px;
+  outline: none;
+  padding: 0% 4% 0% 4%;
 }
 /*# sourceMappingURL=style.css.map *//*# sourceMappingURL=style.css.map */
