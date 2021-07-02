@@ -283,7 +283,7 @@ main {
 .main-container--form {
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   grid-template-rows: repeat(1, [row] auto);
   padding: 5%;
   height: auto;
@@ -548,7 +548,7 @@ main {
 .main-container--form {
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   grid-template-rows: repeat(1, [row] auto);
   padding: 5%;
   height: auto;
