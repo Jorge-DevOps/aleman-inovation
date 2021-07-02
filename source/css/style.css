@@ -385,22 +385,27 @@ header > div {
 }
 
 .section-container--buy {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: repeat(1, [row] auto);
+  align-items: center;
+  justify-items: end;
 }
 
 .div-products {
+  padding: 10% 10%;
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 100%;
 }
 
 .div-pay-order {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  padding: 10%;
+  width: 100%;
   max-width: 500px;
+  justify-self: start;
 }
 
 .div-pay-order div {
@@ -411,7 +416,7 @@ header > div {
 }
 
 .button {
-  padding: 1% 1%;
+  padding: 1%;
   width: 25%;
   background-color: #C18D25;
   border-radius: 12px;
@@ -852,22 +857,27 @@ header > div {
 }
 
 .section-container--buy {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: repeat(1, [row] auto);
+  align-items: center;
+  justify-items: end;
 }
 
 .div-products {
+  padding: 10% 10%;
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 100%;
 }
 
 .div-pay-order {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  padding: 10%;
+  width: 100%;
   max-width: 500px;
+  justify-self: start;
 }
 
 .div-pay-order div {
@@ -878,7 +888,7 @@ header > div {
 }
 
 .button {
-  padding: 1% 1%;
+  padding: 1%;
   width: 25%;
   background-color: #C18D25;
   border-radius: 12px;
