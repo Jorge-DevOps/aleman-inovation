@@ -207,6 +207,8 @@
   justify-content: center;
 }
 .div-products {
+  display: flex;
+  flex-direction: column;
   width: 50%;
 }
 
@@ -232,16 +234,75 @@
   color: white;
 }
 .div-products {
+  padding: 0 3%;
   display: flex;
   flex-direction: column;
   width: 90%;
   max-width: 500px;
 }
+.div-products-info {
+  display: flex;
+  padding: 5%;
+  display: flex;
+  padding: 2% 6%;
+  align-content: center;
+  justify-content: space-between;
+}
+.div-products-info p {
+  font-size: 1.6rem;
+}
+.section-product--description {
+  display: flex;
+  flex-direction: column;
+  padding:0 5%;
+  gap: 20px;
+  height: 360px;
+  overflow-y: scroll;
+  overscroll-behavior-x: contain;
+  -ms-scroll-snap-type: x proximity;
+  scroll-snap-type: x proximity;
+}
+.section-product--description::-webkit-scrollbar {
+  width: 12px;
+  /* width of the entire scrollbar */
+}
+
+.section-product--description::-webkit-scrollbar-track {
+  background: #a19d9d;
+  /* color of the tracking area */
+}
+
+.section-product--description::-webkit-scrollbar-thumb {
+  background-color:#ffffff;
+  /* color of the scroll thumb */
+  border-radius: 20px;
+  /* roundness of the scroll thumb */
+  border:3px solid #a19d9d;
+  /* creates padding around scroll thumb */
+}
+
+.section-product--description::-webkit-scrollbar {
+  -webkit-appearance: none;
+} /*# sourceMappingURL=styles.css.map */
+
 .div-products--description {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-content: center;
   align-items: center;
+}
+.div-products--description img {
+  width: 20%;
+}
+.span-contaner-trash span {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url("/Resource/Icons/icons8-eliminar-papelera-48.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
 }
 //----order.html

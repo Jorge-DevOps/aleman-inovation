@@ -22,16 +22,16 @@ body::-webkit-scrollbar {
   }
   
   body::-webkit-scrollbar-track {
-	background: #292929;
+	background: #22252D;
 	/* color of the tracking area */
   }
   
   body::-webkit-scrollbar-thumb {
-	background-color: $color-menu;
+	background-color: #c8c8c8;
 	/* color of the scroll thumb */
 	border-radius: 20px;
 	/* roundness of the scroll thumb */
-	border: 3px solid #292929;
+	border: 3px solid #22252D;
 	/* creates padding around scroll thumb */
   }
   
