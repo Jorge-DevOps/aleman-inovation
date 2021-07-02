@@ -217,11 +217,6 @@ header > div {
   color: #b89c00;
 }
 
-main {
-  width: auto;
-  height: auto;
-}
-
 .main-container {
   display: flex;
   flex-direction: column;
@@ -268,11 +263,85 @@ main {
   padding: 5%;
 }
 
-.main-container--products {
+.main-product-container {
   width: 100%;
+  min-width: 320px;
+  padding-bottom: 70px;
+  text-align: center;
+}
+
+.product--title {
+  width: 90%;
+  min-width: 288px;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.plans--title h2 {
+  padding-top: 50px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+  color: #282623;
+}
+
+.plans--title p {
+  padding-top: 30px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: #757575;
+}
+
+.products-container-slider {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  gap: 20px;
+  height: 360px;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  -ms-scroll-snap-type: x proximity;
+  scroll-snap-type: x proximity;
+}
+
+.products-container--card {
+  position: relative;
+  scroll-snap-align: center;
+  width: 70%;
+  min-width: 190px;
+  max-width: 300px;
+  height: 250px;
+  margin: 50px auto 0;
+  padding: 0 15px;
+  background-color: #ffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+}
+
+.products-container--card img {
+  padding: 5% 15%;
+  width: 90%;
+}
+
+.products-container--title {
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+}
+
+.products-container--info {
+  display: flex;
+  padding: 5%;
+  justify-content: space-between;
+  align-items: center;
+  align-content: space-between;
+}
+
+.products-container--info span {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background-image: url("/Resource/Icons/icons8_add_basket_32.png");
 }
 
 .main-containers {
@@ -313,6 +382,55 @@ main {
   border-radius: 12px;
   outline: none;
   padding: 0% 4% 0% 4%;
+}
+
+.section-container--buy {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.div-products {
+  width: 50%;
+}
+
+.div-pay-order {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  max-width: 500px;
+}
+
+.div-pay-order div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2% 0;
+}
+
+.button {
+  padding: 1% 1%;
+  width: 25%;
+  background-color: #C18D25;
+  border-radius: 12px;
+  border: solid #C18D25;
+  outline: none;
+  color: white;
+}
+
+.div-products {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  max-width: 500px;
+}
+
+.div-products--description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
 }
 
 .footer-container {
@@ -501,11 +619,6 @@ main {
   color: #b89c00;
 }
 
-main {
-  width: auto;
-  height: auto;
-}
-
 .main-container {
   display: flex;
   flex-direction: column;
@@ -552,11 +665,85 @@ main {
   padding: 5%;
 }
 
-.main-container--products {
+.main-product-container {
   width: 100%;
+  min-width: 320px;
+  padding-bottom: 70px;
+  text-align: center;
+}
+
+.product--title {
+  width: 90%;
+  min-width: 288px;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.plans--title h2 {
+  padding-top: 50px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+  color: #282623;
+}
+
+.plans--title p {
+  padding-top: 30px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: #757575;
+}
+
+.products-container-slider {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  gap: 20px;
+  height: 360px;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  -ms-scroll-snap-type: x proximity;
+  scroll-snap-type: x proximity;
+}
+
+.products-container--card {
+  position: relative;
+  scroll-snap-align: center;
+  width: 70%;
+  min-width: 190px;
+  max-width: 300px;
+  height: 250px;
+  margin: 50px auto 0;
+  padding: 0 15px;
+  background-color: #ffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+}
+
+.products-container--card img {
+  padding: 5% 15%;
+  width: 90%;
+}
+
+.products-container--title {
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+}
+
+.products-container--info {
+  display: flex;
+  padding: 5%;
+  justify-content: space-between;
+  align-items: center;
+  align-content: space-between;
+}
+
+.products-container--info span {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background-image: url("/Resource/Icons/icons8_add_basket_32.png");
 }
 
 .main-containers {
@@ -597,5 +784,54 @@ main {
   border-radius: 12px;
   outline: none;
   padding: 0% 4% 0% 4%;
+}
+
+.section-container--buy {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.div-products {
+  width: 50%;
+}
+
+.div-pay-order {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  max-width: 500px;
+}
+
+.div-pay-order div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2% 0;
+}
+
+.button {
+  padding: 1% 1%;
+  width: 25%;
+  background-color: #C18D25;
+  border-radius: 12px;
+  border: solid #C18D25;
+  outline: none;
+  color: white;
+}
+
+.div-products {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  max-width: 500px;
+}
+
+.div-products--description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
 }
 /*# sourceMappingURL=style.css.map *//*# sourceMappingURL=style.css.map */
