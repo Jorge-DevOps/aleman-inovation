@@ -75,6 +75,13 @@ header > div {
   justify-content: center;
 }
 
+.header-menu--btn {
+  position: absolute;
+  left: 90%;
+  right: 0;
+  top: 2%;
+}
+
 .header-buy {
   display: flex;
   justify-content: flex-end;
@@ -96,6 +103,40 @@ header > div {
   width: auto;
   min-width: 100px;
   max-width: 280px;
+}
+
+.menus-movil-icon {
+  background: #ffffff;
+  position: relative;
+  width: 25px;
+  padding: 2px 0px;
+  border-radius: 6px;
+  margin: 4px 0;
+}
+
+.menus-movil {
+  background: #ffffff;
+  position: relative;
+  width: 25px;
+  padding: 2px 0px;
+  border-radius: 6px;
+}
+
+.menus-movil::after {
+  background: #f9f9f9;
+  content: "";
+  height: 4px;
+  position: absolute;
+  width: 25px;
+  margin: 6px 0;
+  border-radius: 6px;
+}
+
+.correrBtn {
+  left: 5%;
+  position: absolute;
+  right: 0;
+  top: 2%;
 }
 
 .content-div-input {
@@ -163,6 +204,78 @@ header > div {
 .products:hover {
   color: #000;
   display: flex;
+}
+
+.header-menu--movil {
+  display: none;
+  position: absolute;
+  border-radius: 10px;
+  padding: 5% 10%;
+  top: 0;
+  left: 30%;
+  right: 0;
+  background-color: #22252D;
+  width: 70%;
+  height: auto;
+}
+
+.btn_down {
+  background: #ffffff;
+  height: 20px;
+  position: relative;
+  width: 4px;
+  transform: rotate(226deg);
+  left: 13px;
+}
+
+.btn_down::after {
+  background: #ffffff;
+  content: "";
+  height: 4px;
+  position: absolute;
+  width: 20px;
+}
+
+.header-menu--movil summary {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.5rem;
+  padding: 8% 0;
+  justify-content: space-between;
+}
+
+.header-menu--movil details[open] summary p {
+  color: #207A78;
+}
+
+.header-menu--movil details[open] summary .btn_down {
+  transform: rotate(45deg);
+  left: 0;
+}
+
+.header-menu--movil summary p {
+  padding: 5% 10%;
+  width: 100%;
+}
+
+.header-menu--movil ol {
+  list-style: none;
+}
+
+.header-menu--movil a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.3rem;
+}
+
+.header-menu--movil li {
+  padding: 5% 10%;
+}
+
+.header-menu--movil summary img {
+  width: 30px;
 }
 
 .main-card--product {
@@ -692,6 +805,10 @@ header > div {
 
 .menuvisible {
   display: flex;
+}
+
+.menusvisible {
+  display: block;
 }
 
 .main-card--product {
