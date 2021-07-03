@@ -246,13 +246,14 @@ header > div {
   justify-content: space-between;
 }
 
-.header-menu--movil details[open] summary p {
-  color: #207A78;
-}
-
 .header-menu--movil details[open] summary .btn_down {
   transform: rotate(45deg);
   left: 0;
+  background-color: #207A78;
+}
+
+.header-menu--movil details[open] summary .btn_down::after {
+  background-color: #207A78;
 }
 
 .header-menu--movil summary p {

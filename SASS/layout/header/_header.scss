@@ -180,12 +180,15 @@ header > div {
   justify-content: space-between;
 }
 .header-menu--movil details[open] summary p {
-  color: $color-menu;
+  // color: $color-menu;
 }
 .header-menu--movil details[open] summary .btn_down{
   transform: rotate(45deg);
   left: 0;
-
+  background-color: $color-menu;
+}
+.header-menu--movil details[open] summary .btn_down::after{
+  background-color: $color-menu;
 }
 .header-menu--movil summary p {
   padding: 5% 10%;
