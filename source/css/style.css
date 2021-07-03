@@ -269,21 +269,27 @@ header > div {
 }
 
 .container-especifications {
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-template-rows: repeat(1, [row] auto);
-  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   padding: 1% 0;
+  align-content: center;
 }
 
 .container-especifications div {
   text-align: center;
   border: solid 1px #a3a3a3;
   border-radius: 12px;
-  max-width: 40px;
-  max-height: 100px;
+  padding: 3%;
+  margin: 0 2%;
+}
+
+.container-especification {
+  padding: 0 6%;
+  max-width: 800px;
+  width: 100%;
+  font-size: 1.9rem;
 }
 
 .main-container--description {
@@ -792,21 +798,27 @@ header > div {
 }
 
 .container-especifications {
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-template-rows: repeat(1, [row] auto);
-  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   padding: 1% 0;
+  align-content: center;
 }
 
 .container-especifications div {
   text-align: center;
   border: solid 1px #a3a3a3;
   border-radius: 12px;
-  max-width: 40px;
-  max-height: 100px;
+  padding: 3%;
+  margin: 0 2%;
+}
+
+.container-especification {
+  padding: 0 6%;
+  max-width: 800px;
+  width: 100%;
+  font-size: 1.9rem;
 }
 
 .main-container--description {
