@@ -331,6 +331,18 @@ header > div {
   color: #b89c00;
 }
 
+.main-container--imagen {
+  width: 100%;
+}
+
+.main-container--imagen img {
+  width: 100%;
+}
+
+.main-container--ofert img {
+  width: 100%;
+}
+
 .main-container {
   display: flex;
   flex-direction: column;
@@ -862,6 +874,18 @@ header > div {
 .card-product h3 {
   font-size: 1.6rem;
   color: #b89c00;
+}
+
+.main-container--imagen {
+  width: 100%;
+}
+
+.main-container--imagen img {
+  width: 100%;
+}
+
+.main-container--ofert img {
+  width: 100%;
 }
 
 .main-container {
