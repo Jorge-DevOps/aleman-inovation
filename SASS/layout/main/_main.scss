@@ -117,7 +117,7 @@
 .products-container-slider {
   display: flex;
   gap: 20px;
-  height: 360px;
+  height: 380px;
   overflow-x: scroll;
   overscroll-behavior-x: contain;
   -ms-scroll-snap-type: x proximity;
@@ -128,9 +128,9 @@
   position: relative;
   scroll-snap-align: center;
   width: 70%;
-  min-width: 190px;
-  max-width: 300px;
-  height: 250px;
+  min-width: 300px;
+  max-width: 500px;
+  height: 300px;
   margin: 50px auto 0;
   padding: 0 15px;
   background-color: #ffff;
@@ -161,6 +161,29 @@
   height: 32px;
   background-image: url("/Resource/Icons/icons8_add_basket_32.png");
 }
+
+.products-container-slider::-webkit-scrollbar {
+  width: 12px;
+  /* width of the entire scrollbar */
+}
+
+.products-container-slider::-webkit-scrollbar-track {
+  background: #a19d9d;
+  /* color of the tracking area */
+}
+
+.products-container-slider::-webkit-scrollbar-thumb {
+  background-color:#ffffff;
+  /* color of the scroll thumb */
+  border-radius: 20px;
+  /* roundness of the scroll thumb */
+  border:3px solid #a19d9d;
+  /* creates padding around scroll thumb */
+}
+
+.products-container-slider::-webkit-scrollbar {
+  -webkit-appearance: none;
+} /*# sourceMappingURL=styles.css.map */
 
 //----product.html
 
