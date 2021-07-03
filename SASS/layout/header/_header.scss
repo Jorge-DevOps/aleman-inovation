@@ -1,4 +1,6 @@
 header > div {
+  display: flex;
+  flex-direction: column;
   background-color: $color-header;
 }
 .header-user ul {
@@ -29,11 +31,10 @@ header > div {
   justify-content: center;
 }
 .header-buy {
-  grid-column: col 4 / span 1;
-  grid-row: row;
   display: flex;
-  width: auto;
-  margin: 0 auto;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 4%;
 }
 .header-search {
   grid-column: col 2 / span 2;
@@ -73,14 +74,12 @@ header > div {
 .icon-car {
   width: 40px;
   height: 40px;
-  margin: auto;
   background-image: url("../../Resource/Icons/buy_100px.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .header-content p {
-  margin: auto;
   font-size: 1.7rem;
   color: white;
 }

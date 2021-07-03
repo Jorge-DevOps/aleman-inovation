@@ -40,6 +40,8 @@ body::-webkit-scrollbar {
   -webkit-appearance: none;
 }
 header > div {
+  display: flex;
+  flex-direction: column;
   background-color: #22252D;
 }
 
@@ -74,11 +76,10 @@ header > div {
 }
 
 .header-buy {
-  grid-column: col 4/span 1;
-  grid-row: row;
   display: flex;
-  width: auto;
-  margin: 0 auto;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 4%;
 }
 
 .header-search {
@@ -124,7 +125,6 @@ header > div {
 .icon-car {
   width: 40px;
   height: 40px;
-  margin: auto;
   background-image: url("../../Resource/Icons/buy_100px.png");
   background-size: cover;
   background-position: center;
@@ -132,7 +132,6 @@ header > div {
 }
 
 .header-content p {
-  margin: auto;
   font-size: 1.7rem;
   color: white;
 }
@@ -1017,5 +1016,36 @@ header > div {
   background-position: center;
   background-repeat: no-repeat;
   text-align: center;
+}
+
+@media (max-width: 425px) {
+  .header-menu {
+    display: none;
+  }
+
+  .header-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header-search {
+    justify-content: center;
+  }
+
+  .icon-search {
+    margin-left: 3%;
+  }
+
+  .header-user {
+    display: none;
+  }
+}
+@media (min-width: 930px) {
+  .product-cards--container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 930px;
+    margin: 0 auto;
+  }
 }
 /*# sourceMappingURL=style.css.map *//*# sourceMappingURL=style.css.map */
