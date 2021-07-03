@@ -63,6 +63,7 @@
   align-items: center;
   flex-direction: column;
 }
+
 .main-container--photo p {
   padding: 5%;
   font-size: 1.8rem;
@@ -73,8 +74,40 @@
   width: 50%;
 }
 .main-container--especification {
-  background-color: rgb(34, 100, 100);
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   width: 50%;
+}
+.container-especification-title {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-radius: 12px;
+  border: solid 1.5px #a3a3a3;
+  padding: 1.5% 0;
+
+}
+.container-especifications {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: repeat(1, [row] auto);
+  height: auto;
+  width: 100%;
+  padding:1% 0;
+
+}
+.container-especifications div{
+  text-align: center;
+  border: solid 1px #a3a3a3;
+  border-radius: 12px;
+  max-width: 40px;
+  max-height: 100px;
 }
 .main-container--description {
   width: 100%;
@@ -173,11 +206,11 @@
 }
 
 .products-container-slider::-webkit-scrollbar-thumb {
-  background-color:#ffffff;
+  background-color: #ffffff;
   /* color of the scroll thumb */
   border-radius: 20px;
   /* roundness of the scroll thumb */
-  border:3px solid #a19d9d;
+  border: 3px solid #a19d9d;
   /* creates padding around scroll thumb */
 }
 
@@ -224,6 +257,9 @@
   outline: none;
   padding: 0% 4% 0% 4%;
 }
+.div-container--form label {
+  font-size: 1.9rem;
+}
 .section-container--buy {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -231,18 +267,12 @@
   align-items: center;
   justify-items: end;
 }
-.div-products {
-  padding: 10% 10%;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
 
 .div-pay-order {
   display: flex;
   flex-direction: column;
   padding: 10%;
-  width:100%;
+  width: 100%;
   max-width: 500px;
   justify-self: start;
 }
@@ -262,10 +292,9 @@
   color: white;
 }
 .div-products {
-  padding: 0 3%;
   display: flex;
   flex-direction: column;
-  width: 90%;
+  width: 100%;
   max-width: 500px;
 }
 .div-products-info {
@@ -282,7 +311,7 @@
 .section-product--description {
   display: flex;
   flex-direction: column;
-  padding:0 5%;
+  padding: 0 5%;
   gap: 20px;
   height: 360px;
   overflow-y: scroll;
@@ -301,11 +330,11 @@
 }
 
 .section-product--description::-webkit-scrollbar-thumb {
-  background-color:#ffffff;
+  background-color: #ffffff;
   /* color of the scroll thumb */
   border-radius: 20px;
   /* roundness of the scroll thumb */
-  border:3px solid #a19d9d;
+  border: 3px solid #a19d9d;
   /* creates padding around scroll thumb */
 }
 

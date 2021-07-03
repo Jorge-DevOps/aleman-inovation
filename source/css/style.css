@@ -249,8 +249,41 @@ header > div {
 }
 
 .main-container--especification {
-  background-color: #226464;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   width: 50%;
+}
+
+.container-especification-title {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-radius: 12px;
+  border: solid 1.5px #a3a3a3;
+  padding: 1.5% 0;
+}
+
+.container-especifications {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: repeat(1, [row] auto);
+  height: auto;
+  width: 100%;
+  padding: 1% 0;
+}
+
+.container-especifications div {
+  text-align: center;
+  border: solid 1px #a3a3a3;
+  border-radius: 12px;
+  max-width: 40px;
+  max-height: 100px;
 }
 
 .main-container--description {
@@ -405,19 +438,16 @@ header > div {
   padding: 0% 4% 0% 4%;
 }
 
+.div-container--form label {
+  font-size: 1.9rem;
+}
+
 .section-container--buy {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-template-rows: repeat(1, [row] auto);
   align-items: center;
   justify-items: end;
-}
-
-.div-products {
-  padding: 10% 10%;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
 }
 
 .div-pay-order {
@@ -447,10 +477,9 @@ header > div {
 }
 
 .div-products {
-  padding: 0 3%;
   display: flex;
   flex-direction: column;
-  width: 90%;
+  width: 100%;
   max-width: 500px;
 }
 
@@ -743,8 +772,41 @@ header > div {
 }
 
 .main-container--especification {
-  background-color: #226464;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   width: 50%;
+}
+
+.container-especification-title {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-radius: 12px;
+  border: solid 1.5px #a3a3a3;
+  padding: 1.5% 0;
+}
+
+.container-especifications {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: repeat(1, [row] auto);
+  height: auto;
+  width: 100%;
+  padding: 1% 0;
+}
+
+.container-especifications div {
+  text-align: center;
+  border: solid 1px #a3a3a3;
+  border-radius: 12px;
+  max-width: 40px;
+  max-height: 100px;
 }
 
 .main-container--description {
@@ -899,19 +961,16 @@ header > div {
   padding: 0% 4% 0% 4%;
 }
 
+.div-container--form label {
+  font-size: 1.9rem;
+}
+
 .section-container--buy {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-template-rows: repeat(1, [row] auto);
   align-items: center;
   justify-items: end;
-}
-
-.div-products {
-  padding: 10% 10%;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
 }
 
 .div-pay-order {
@@ -941,10 +1000,9 @@ header > div {
 }
 
 .div-products {
-  padding: 0 3%;
   display: flex;
   flex-direction: column;
-  width: 90%;
+  width: 100%;
   max-width: 500px;
 }
 
@@ -1030,6 +1088,7 @@ header > div {
 
   .header-search {
     justify-content: center;
+    margin-top: 4%;
   }
 
   .icon-search {
@@ -1038,6 +1097,22 @@ header > div {
 
   .header-user {
     display: none;
+  }
+
+  .main-container-product {
+    flex-direction: column;
+  }
+
+  .main-container--photo {
+    width: 100%;
+  }
+
+  .div-products {
+    padding: 10% 0%;
+  }
+
+  .main-container--especification {
+    width: 100%;
   }
 }
 @media (min-width: 930px) {
