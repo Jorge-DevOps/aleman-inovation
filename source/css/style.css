@@ -218,6 +218,7 @@ header > div {
   background-color: #22252D;
   width: 70%;
   height: auto;
+  box-shadow: -10px 10px 15px 4px rgba(0, 0, 0, 0.5);
 }
 
 .btn_down {
