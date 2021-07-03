@@ -2,36 +2,39 @@
   header > div {
     // flex-direction: row;
   }
-  .header-menu{
-      display: none;
+  .header-menu {
+    display: none;
   }
-  .header-content{
-      display: flex;
+  .header-content {
+    display: flex;
     flex-direction: column;
   }
-  .header-search{
-      justify-content: center;
-      margin-top: 4%;
+  .header-search {
+    justify-content: center;
+    margin-top: 4%;
   }
-  .icon-search{
-      margin-left: 3%;
+  .icon-search {
+    margin-left: 3%;
   }
 
-.header-user  {
+  .header-user {
     display: none;
-}
-.main-container-product{
+  }
+  .main-container-product {
     flex-direction: column;
-}
-.main-container--photo{
+  }
+  .main-container--photo {
     width: 100%;
-}
-.div-products{
-  padding: 10% 0%;
-}
-.main-container--especification{
+  }
+  .div-products {
+    padding: 10% 0%;
+  }
+  .main-container--especification {
     width: 100%;
-}
+  }
+  .header-menu--btn {
+    display: block;
+  }
 }
 @media (min-width: 930px) {
   .product-cards--container {

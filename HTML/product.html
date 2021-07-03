@@ -22,10 +22,15 @@
         </ul>
       </section>
 
-      <section class="header-content">
+      <section class="header-content" >
         <div class="header-logo">
-          <img src="../Resource/Icons/Logo.svg" alt="">
+          <div class="header-menu--btn" onclick="menu_movil()" id="btnMenu">
+            <div class="menus-movil-icon"></div>
+            <div class="menus-movil"></div>
+          </div>
+          <img src="../../Resource/Icons/Logo.svg" alt="">
         </div>
+
         <div class="header-search">
           <div class="content-div-input">
             <input type="text">
@@ -40,7 +45,7 @@
       </section>
       <section class="header-menu">
         <ul>
-          <li><a href="/aleman-inovation/">INICIO</a></li>
+          <li><a href="/aleman-inovation">INICIO</a></li>
           <li><a href="/aleman-inovation/HTML/nosotros.html">NOSOTROS</a></li>
           <li><a href="#" onclick="menu()">PRODUCTOS</a></li>
           <li><a href="#">SERVICIOS</a></li>
@@ -48,6 +53,111 @@
         </ul>
       </section>
     </div>
+    <section class="header-menu--movil" id="menu-movil">
+      <details>
+        <summary>
+          <img src="../Resource/Icons/icons8_adjust_64.png" alt="">
+          <p>Medicion y control</p>
+          <section class="down">
+            <div class="btn_down"></div>
+          </section>
+
+        </summary>
+        <ol class="">
+          <li><a href=""> Flotadores electricos</a></li>
+          <li><a href=""> Presostatos</a></li>
+          <li><a href=""> Manómetros</a></li>
+          <li> <a href=""> Control Automático de Presión</a></li>
+        </ol>
+      </details>
+      <details>
+        <summary>
+          <img src="../Resource/Icons/flotador.png" alt="">
+          <p> Bombas para liquidos</p>
+          <section class="down">
+            <div class="btn_down"></div>
+          </section>
+        </summary>
+        <ol class="">
+          <li><a href="">Bombas perifericas</a></li>
+          <li><a href="">Bombas sumergibles</a></li>
+          <li><a href="">Bombas centrifugas</a></li>
+        </ol>
+      </details>
+      <details>
+        <summary>
+          <img src="../Resource/Icons/accesories_64.png" alt="">
+          <p>Accesorios y partes</p>
+          <section class="down">
+            <div class="btn_down"></div>
+          </section>
+        </summary>
+        <ol class="">
+          <li><a href="">Válvulas de Pie en PVC</a></li>
+          <li><a href="">Tubos flexibles</a></li>
+          <li><a href="">Racor de 5 vias</a></li>
+          <li><a href="">Membranas</a></li>
+          <li><a href="">Cheques hidro</a></li>
+          <li><a href="">Sellos Mecanicos</a></li>
+          <li><a href="">Resorte</a></li>
+          <li><a href="">Conicos</a></li>
+          <li><a href="">Milimetricos</a></li>
+        </ol>
+      </details>
+      <details>
+        <summary>
+          <img src="../Resource/Icons/manguera_64.png" alt="">
+          <p> Mangueras</p>
+          <section class="down">
+            <div class="btn_down"></div>
+          </section>
+        </summary>
+        <ol class="">
+          <li><a href="">Manguera plana tipo bombero</a></li>
+          <li><a href="">Manguera difusora</a></li>
+        </ol>
+      </details>
+      <details>
+        <summary>
+          <img src="../Resource/Icons/motor_64.png" alt="">
+          <p> Blower</p>
+          <section class="down">
+            <div class="btn_down"></div>
+          </section>
+        </summary>
+        <ol class="">
+          <li><a href="">Blower industrial</a></li>
+          <li><a href="">Blower domestico</a></li>
+        </ol>
+      </details>
+      <details>
+        <summary>
+          <img src="../Resource/Icons/equipospresion_64.png" alt="">
+          <p> Equipos de presion</p>
+          <section class="down">
+            <div class="btn_down"></div>
+          </section>
+        </summary>
+        <ol class="">
+          <li><a href="">Equipos de Control Automático</a></li>
+          <li><a href="">Equipos Hidroneumaticos</a></li>
+        </ol>
+      </details>
+      <details>
+        <summary>
+          <img src="../Resource/Icons/icons8_engine_64.png" alt="">
+          <p> Motores electricos</p>
+          <section class="down">
+            <div class="btn_down"></div>
+          </section>
+        </summary>
+        <ol class="">
+          <li><a href="">Monofasicos</a></li>
+          <li><a href="">Trifasicos</a></li>
+        </ol>
+      </details>
+
+    </section>
     <section class="menu" id="menu">
       <ul class="menu-title">
         <li>Medicion y control</li>
@@ -59,9 +169,9 @@
         <li>Motores electricos</li>
         <ul class="item-menu border1">
           <li><a href=""> Flotadores electricos</a></li>
-          <li><a href=""> Presostato</a></li>
-          <li><a href=""> Nanometros</a></li>
-          <li class="border1"> <a href=""> control auto. de presion</a></li>
+          <li><a href=""> Presostatos</a></li>
+          <li><a href=""> Manómetros</a></li>
+          <li> <a href=""> Control Automático de Presión</a></li>
         </ul>
         <ul class="item-menu">
           <li><a href="">Bombas perifericas</a></li>
@@ -69,8 +179,8 @@
           <li><a href="">Bombas centrifugas</a></li>
         </ul>
         <ul class="item-menu">
-          <li><a href="">Valvulas de PVC</a></li>
-          <li><a href="">Tubo flexible</a></li>
+          <li><a href="">Válvulas de Pie en PVC</a></li>
+          <li><a href="">Tubos flexibles</a></li>
           <li><a href="">Racor de 5 vias</a></li>
           <li><a href="">Membranas</a></li>
           <li><a href="">Cheques hidro</a></li>
@@ -89,9 +199,9 @@
           <li><a href="">Blower domestico</a></li>
         </ul>
         <ul class="item-menu">
-          <li><a href="">Equipos de ctrl. automatico</a></li>
-          <li><a href="">Equipos hidroneumaticos</a></li>
-        </ul>
+          <li><a href="">Equipos de Control Automático</a></li>
+          <li><a href="">Equipos Hidroneumaticos</a></li>
+          </ul>
         <ul class="item-menu border">
           <li><a href="">Monofasicos</a></li>
           <li><a href="">Trifasicos</a></li>
@@ -99,6 +209,7 @@
       </ul>
 
     </section>
+
   </header>
   <main>
     <section class="main-container">

@@ -76,6 +76,7 @@ header > div {
 }
 
 .header-menu--btn {
+  display: none;
   position: absolute;
   left: 90%;
   right: 0;
@@ -1243,6 +1244,10 @@ header > div {
 
   .main-container--especification {
     width: 100%;
+  }
+
+  .header-menu--btn {
+    display: block;
   }
 }
 @media (min-width: 930px) {
