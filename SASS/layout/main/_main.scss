@@ -48,6 +48,7 @@
 }
 .main-container--imagen img {
   width: 100%;
+  height: 500px;
 }
 .main-container--ofert {
 }
@@ -101,6 +102,7 @@
   border-radius: 12px;
   border: solid 1.5px #a3a3a3;
   padding: 1.5% 0;
+  outline: none;
 }
 .container-especifications {
   display: flex;
@@ -121,7 +123,7 @@
   display: flex;
   flex-direction: column;
   max-width: 800px;
-  width: 100%;
+  width: 50%;
   font-size: 1.9rem;
   align-content: center;
   justify-content: center;

@@ -145,6 +145,7 @@ header > div {
   display: flex;
 }
 .header-menu--movil {
+  z-index: 1;
   display: none;
   position: absolute;
   border-radius: 10px;
@@ -180,10 +181,12 @@ header > div {
   font-size: 1.5rem;
   padding: 8% 0;
   justify-content: space-between;
+  outline: none;
 }
 .header-menu--movil details[open] summary p {
-  // color: $color-menu;
+
 }
+
 .header-menu--movil details[open] summary .btn_down{
   transform: rotate(45deg);
   left: 0;
@@ -209,5 +212,18 @@ header > div {
 }
 .header-menu--movil summary img {
   width: 30px;
+}
+.content-user--options{
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+.content-user--option {
+  font-size: 1.5rem !important;
+  color: white;
+  padding: 10% 0 0 0 !important;
+}
+.content-user--option:hover{
+  color: $color-menu;
 }
 
