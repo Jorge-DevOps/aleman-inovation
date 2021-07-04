@@ -344,7 +344,7 @@ header > div {
   width: 100%;
 }
 
-.main-container {
+.html .main-container {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -414,10 +414,31 @@ header > div {
 }
 
 .container-especification {
-  padding: 0 6%;
+  display: flex;
+  flex-direction: column;
   max-width: 800px;
   width: 100%;
   font-size: 1.9rem;
+  align-content: center;
+  justify-content: center;
+  padding: 0 5%;
+}
+
+.flecha {
+  background: #595858;
+  height: 20px;
+  position: relative;
+  width: 4px;
+  transform: rotate(226deg);
+  left: 40px;
+}
+
+.flecha::after {
+  background: #595858;
+  content: "";
+  height: 4px;
+  position: absolute;
+  width: 20px;
 }
 
 .main-container--description {
@@ -889,7 +910,7 @@ header > div {
   width: 100%;
 }
 
-.main-container {
+.html .main-container {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -959,10 +980,31 @@ header > div {
 }
 
 .container-especification {
-  padding: 0 6%;
+  display: flex;
+  flex-direction: column;
   max-width: 800px;
   width: 100%;
   font-size: 1.9rem;
+  align-content: center;
+  justify-content: center;
+  padding: 0 5%;
+}
+
+.flecha {
+  background: #595858;
+  height: 20px;
+  position: relative;
+  width: 4px;
+  transform: rotate(226deg);
+  left: 40px;
+}
+
+.flecha::after {
+  background: #595858;
+  content: "";
+  height: 4px;
+  position: absolute;
+  width: 20px;
 }
 
 .main-container--description {

@@ -43,21 +43,20 @@
   font-size: 1.6rem;
   color: rgb(184, 156, 0);
 }
-.main-container--imagen{
+.main-container--imagen {
   width: 100%;
 }
-.main-container--imagen img{
+.main-container--imagen img {
   width: 100%;
 }
-.main-container--ofert{
+.main-container--ofert {
+}
+.main-container--ofert img {
+  width: 100%;
+}
 
-}
-.main-container--ofert img{
-  width: 100%;
-}
-
-//---product.html
-.main-container {
+//---product21280
+.html .main-container {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -102,7 +101,6 @@
   border-radius: 12px;
   border: solid 1.5px #a3a3a3;
   padding: 1.5% 0;
-
 }
 .container-especifications {
   display: flex;
@@ -112,20 +110,38 @@
   padding: 1% 0;
   align-content: center;
 }
-.container-especifications div{
+.container-especifications div {
   text-align: center;
   border: solid 1px #a3a3a3;
   border-radius: 12px;
   padding: 3%;
   margin: 0 2%;
 }
-.container-especification{
-  padding: 0 6%;
+.container-especification {
+  display: flex;
+  flex-direction: column;
   max-width: 800px;
   width: 100%;
   font-size: 1.9rem;
+  align-content: center;
+  justify-content: center;
+  padding: 0 5%;
 }
-
+.flecha {
+  background: #595858;
+  height: 20px;
+  position: relative;
+  width: 4px;
+  transform: rotate(226deg);
+  left: 40px;
+}
+.flecha::after {
+  background: #595858;
+  content: "";
+  height: 4px;
+  position: absolute;
+  width: 20px;
+}
 .main-container--description {
   width: 100%;
 }
