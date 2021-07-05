@@ -492,7 +492,7 @@ header > div {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 2%;
+  padding-top: 1%;
   width: 24px;
   height: 24px;
   font-size: 1.9rem;
@@ -1196,7 +1196,7 @@ header > div {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 2%;
+  padding-top: 1%;
   width: 24px;
   height: 24px;
   font-size: 1.9rem;
