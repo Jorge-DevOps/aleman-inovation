@@ -729,12 +729,58 @@ header > div {
 }
 
 .footer-container {
+  display: flex;
   width: 100%;
+  height: auto;
+  background-image: url("/Resource/layout/Recurso 22@72x.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.footer--svg-fondo {
+.footer-container--info {
+  display: flex;
+  font-size: 1.5rem;
+  justify-content: space-evenly;
   width: 100%;
-  height: 0;
+  height: auto;
+  padding: 0 5%;
+  align-items: center;
+  align-content: center;
+}
+
+.footer-container--info li {
+  list-style: none;
+  padding: 1% 0;
+  color: white;
+}
+
+.footer-container--info li img {
+  width: 65%;
+}
+
+.footer-container--info ul {
+  align-self: start;
+  padding: 1% 0;
+}
+
+.footer-container--title {
+  font-size: 1.9rem;
+}
+
+.footer--img-fondo img {
+  position: absolute;
+  width: 100%;
+  height: 200px;
+}
+
+.footer-container--redes {
+  display: flex;
+  align-self: center !important;
 }
 
 .footer-logo {
@@ -744,12 +790,7 @@ header > div {
   align-content: space-around;
   width: 100%;
   height: auto;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  left: 0px;
-  margin-top: 10%;
-  padding: 0;
+  padding: 2% 0;
 }
 
 .footer-logo img {
@@ -1342,6 +1383,10 @@ header > div {
 
   .container-especification {
     width: 100%;
+  }
+
+  .footer-container--info {
+    flex-direction: column;
   }
 }
 @media (min-width: 930px) {

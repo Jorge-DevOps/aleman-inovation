@@ -38,6 +38,9 @@
   .container-especification{
     width: 100%;
   }
+  .footer-container--info{
+    flex-direction: column;
+  }
 }
 @media (min-width: 930px) {
   .product-cards--container {
