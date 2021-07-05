@@ -51,11 +51,41 @@
   height: 500px;
 }
 .main-container--ofert {
-}
-.main-container--ofert img {
-  width: 100%;
-}
+  display: flex;
 
+  justify-content: space-evenly;
+  width: 100%;
+  height: auto;
+  background-image: url("../../Resource/layout/Recurso 21@72x.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.main-container--ofertImage{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 50%;
+  align-items: center;
+}
+.main-container--ofertImage img{
+  width: 40%;
+}
+.main-container--ofertProduct img:nth-child(1) {
+  width: 40%;
+}
+.main-container--ofertProduct img:nth-child(2) {
+  width: 30%;
+}
+.main-container--ofertProduct{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: flex-start;
+}
+.main-container--ofertProduct img{
+  width: 50%;
+}
 //---product21280
 .html .main-container {
   display: flex;

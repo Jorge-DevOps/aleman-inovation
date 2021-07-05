@@ -359,8 +359,46 @@ header > div {
   height: 500px;
 }
 
-.main-container--ofert img {
+.main-container--ofert {
+  display: flex;
+  justify-content: space-evenly;
   width: 100%;
+  height: auto;
+  background-image: url("../../Resource/layout/Recurso 21@72x.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.main-container--ofertImage {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 50%;
+  align-items: center;
+}
+
+.main-container--ofertImage img {
+  width: 40%;
+}
+
+.main-container--ofertProduct img:nth-child(1) {
+  width: 40%;
+}
+
+.main-container--ofertProduct img:nth-child(2) {
+  width: 30%;
+}
+
+.main-container--ofertProduct {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: flex-start;
+}
+
+.main-container--ofertProduct img {
+  width: 50%;
 }
 
 .html .main-container {
@@ -1025,8 +1063,46 @@ header > div {
   height: 500px;
 }
 
-.main-container--ofert img {
+.main-container--ofert {
+  display: flex;
+  justify-content: space-evenly;
   width: 100%;
+  height: auto;
+  background-image: url("../../Resource/layout/Recurso 21@72x.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.main-container--ofertImage {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 50%;
+  align-items: center;
+}
+
+.main-container--ofertImage img {
+  width: 40%;
+}
+
+.main-container--ofertProduct img:nth-child(1) {
+  width: 40%;
+}
+
+.main-container--ofertProduct img:nth-child(2) {
+  width: 30%;
+}
+
+.main-container--ofertProduct {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: flex-start;
+}
+
+.main-container--ofertProduct img {
+  width: 50%;
 }
 
 .html .main-container {
@@ -1498,6 +1574,21 @@ header > div {
 
   .footer-container--info {
     flex-direction: column;
+  }
+
+  .main-container--ofert {
+    flex-direction: column;
+  }
+
+  .main-container--ofertImage {
+    width: 100%;
+    padding: 5% 0;
+  }
+
+  .main-container--ofertProduct {
+    width: 100%;
+    align-items: center;
+    padding: 5% 0;
   }
 }
 @media (min-width: 930px) {

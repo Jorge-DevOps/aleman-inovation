@@ -41,6 +41,18 @@
   .footer-container--info{
     flex-direction: column;
   }
+  .main-container--ofert{
+    flex-direction: column;
+  }
+  .main-container--ofertImage{
+    width: 100%;
+    padding: 5% 0;
+  }
+  .main-container--ofertProduct{
+    width: 100%;
+    align-items: center;
+    padding: 5% 0;
+  }
 }
 @media (min-width: 930px) {
   .product-cards--container {
