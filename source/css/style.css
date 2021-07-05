@@ -440,8 +440,36 @@ header > div {
   width: 50%;
   font-size: 1.9rem;
   align-content: center;
-  justify-content: center;
+  justify-content: space-evenly;
   padding: 0 5%;
+}
+
+.container-especification--amount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-especification--amount p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2%;
+  width: 24px;
+  height: 24px;
+  font-size: 1.9rem;
+  border: solid 1px #b6b6b6;
+}
+
+.container-especification--amount button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border: solid 1px #b6b6b6;
+  outline: none;
+  background-color: white;
 }
 
 .flecha {
@@ -459,6 +487,33 @@ header > div {
   height: 4px;
   position: absolute;
   width: 20px;
+}
+
+.container-especification--price {
+  display: flex;
+  justify-content: center;
+}
+
+.container-especification--price p {
+  font-size: 3rem;
+  color: #22252D;
+  padding: 5% 0 0 0;
+}
+
+.container-especification--btnBuy {
+  display: flex;
+  justify-content: center;
+  padding: 5% 0 0 0;
+}
+
+.container-especification--btnBuy input {
+  padding: 1%;
+  width: 25%;
+  background-color: #C18D25;
+  border-radius: 12px;
+  border: solid #C18D25;
+  outline: none;
+  color: white;
 }
 
 .main-container--description {
@@ -641,7 +696,7 @@ header > div {
   padding: 2% 0;
 }
 
-.button {
+.div-pay-order .button {
   padding: 1%;
   width: 25%;
   background-color: #C18D25;
@@ -765,7 +820,7 @@ header > div {
 
 .footer-container--info ul {
   align-self: start;
-  padding: 1% 0;
+  padding: 1%;
 }
 
 .footer-container--title {
@@ -892,7 +947,8 @@ header > div {
 }
 
 .item-menu {
-  background: rgba(0, 0, 0, 0.377);
+  z-index: 1;
+  background: rgba(34, 37, 45, 0.96);
   padding: 4% 4px;
 }
 
@@ -1050,8 +1106,36 @@ header > div {
   width: 50%;
   font-size: 1.9rem;
   align-content: center;
-  justify-content: center;
+  justify-content: space-evenly;
   padding: 0 5%;
+}
+
+.container-especification--amount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-especification--amount p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2%;
+  width: 24px;
+  height: 24px;
+  font-size: 1.9rem;
+  border: solid 1px #b6b6b6;
+}
+
+.container-especification--amount button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border: solid 1px #b6b6b6;
+  outline: none;
+  background-color: white;
 }
 
 .flecha {
@@ -1069,6 +1153,33 @@ header > div {
   height: 4px;
   position: absolute;
   width: 20px;
+}
+
+.container-especification--price {
+  display: flex;
+  justify-content: center;
+}
+
+.container-especification--price p {
+  font-size: 3rem;
+  color: #22252D;
+  padding: 5% 0 0 0;
+}
+
+.container-especification--btnBuy {
+  display: flex;
+  justify-content: center;
+  padding: 5% 0 0 0;
+}
+
+.container-especification--btnBuy input {
+  padding: 1%;
+  width: 25%;
+  background-color: #C18D25;
+  border-radius: 12px;
+  border: solid #C18D25;
+  outline: none;
+  color: white;
 }
 
 .main-container--description {
@@ -1251,7 +1362,7 @@ header > div {
   padding: 2% 0;
 }
 
-.button {
+.div-pay-order .button {
   padding: 1%;
   width: 25%;
   background-color: #C18D25;
